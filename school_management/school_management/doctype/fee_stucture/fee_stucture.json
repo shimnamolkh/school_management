@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "FS.####",
+ "creation": "2022-09-28 12:09:14.748753",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year_group",
+  "admission_fee",
+  "causion_deposit",
+  "tution_fee",
+  "lab_fee",
+  "total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "admission_fee",
+   "fieldtype": "Int",
+   "label": "Admission Fee"
+  },
+  {
+   "fieldname": "causion_deposit",
+   "fieldtype": "Int",
+   "label": "Causion Deposit"
+  },
+  {
+   "fieldname": "tution_fee",
+   "fieldtype": "Int",
+   "label": "Tution Fee"
+  },
+  {
+   "fieldname": "lab_fee",
+   "fieldtype": "Int",
+   "label": "Lab Fee"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fee Stucture",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "year_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year Group",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-06 13:30:55.554489",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Fee Stucture",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

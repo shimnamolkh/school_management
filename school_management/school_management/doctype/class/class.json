@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-28 11:50:51.353158",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_id",
+  "classroom_id",
+  "subject_link_field",
+  "teacher_link_field",
+  "teacher_id",
+  "subject_id",
+  "period",
+  "time",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Class Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "classroom_id",
+   "fieldtype": "Link",
+   "label": "Classroom Id",
+   "options": "Classroom"
+  },
+  {
+   "fieldname": "teacher_id",
+   "fieldtype": "Data",
+   "label": "Teacher Id"
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Select",
+   "label": "Period",
+   "options": "1st\n2nd\n3rd\n4th\n5th\n6th\n7th\n8th"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Select",
+   "label": "Hour",
+   "options": "1\n2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Class",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "subject_link_field",
+   "fieldtype": "Link",
+   "label": "Subject Link FieId",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "subject_id",
+   "fieldtype": "Data",
+   "label": "Subject Id"
+  },
+  {
+   "fieldname": "teacher_link_field",
+   "fieldtype": "Link",
+   "label": "Teacher Link Field",
+   "options": "Teacher"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-03 17:53:22.131745",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Class",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,50 @@
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+
+    <div class="col-sm-2">
+
+        <img alt="{{ school_name }}" src="{{ school_image }}">
+
+    </div>
+
+    <div class="col">
+
+        <h1>{{ title }}</h1>
+
+        <p class="lead"> {{ school_name }}</p>
+
+        <div>
+
+            {%- if syllabus == 'ICSE' -%}
+
+            <span class="badge badge-success">ICSE</span>
+            {%- elif status == 'CBSE' -%}
+
+            <span class="badge badge-primary">CBSE</span>
+            {%- elif status == 'KERALA STATE' -%}
+
+            <span class="badge badge-primary">KERALA STATE</span>
+
+
+            {%- endif -%}
+
+        </div>
+
+        <div class="mt-4">
+
+            <div>EMAIL: <strong>{{ email }}</strong></div>
+
+            <div>CONTACT NUMBER: <strong>{{ contact_number}}</strong></div>
+
+        </div>
+
+        <p>{{ facitities }}</p>
+
+    </div>
+
+</div>
+
+{% endblock %}

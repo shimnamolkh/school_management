@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-28 11:54:13.467204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "classroom_id",
+  "capacity",
+  "type",
+  "facilities",
+  "amended_from",
+  "enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "classroom_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Classroom Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Int",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Lab\nGraphics Hall\nClass"
+  },
+  {
+   "fieldname": "facilities",
+   "fieldtype": "Small Text",
+   "label": "Facilities"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Classroom",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "enable",
+   "fieldtype": "Data",
+   "label": "Enable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-04 11:41:28.166457",
+ "modified_by": "Administrator",
+ "module": "School Management",
+ "name": "Classroom",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
